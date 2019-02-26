@@ -7,6 +7,7 @@ RUN conda install --quiet --yes \
     'jupyter_contrib_nbextensions' \
     'jupyter_nbextensions_configurator' \
     'pandas-profiling' && \
+    'plotly' && \
     conda clean --all && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
