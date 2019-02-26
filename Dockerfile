@@ -6,7 +6,7 @@ RUN conda update -n base conda
 RUN conda install --quiet --yes \
     'jupyter_contrib_nbextensions' \
     'jupyter_nbextensions_configurator' \
-    'pandas-profiling' && \
+    'pandas-profiling' \
     'plotly' && \
     conda clean --all && \
     fix-permissions $CONDA_DIR && \
